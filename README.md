@@ -1,8 +1,8 @@
-# TFMS - Trading and Financial Market System
+# TFMS=
 
 ## Giới thiệu
 
-TFMS (Trading and Financial Market System) là một hệ thống phân tích và dự đoán thị trường chứng khoán sử dụng các phương pháp học máy và phân tích dữ liệu. Dự án này tích hợp nhiều kỹ thuật khác nhau để phân tích giá cổ phiếu, bao gồm mô hình dự đoán dựa trên học sâu (LSTM), học máy truyền thống (Random Forest), phân tích tương quan và phân tích tình cảm từ tin tức thị trường.
+TFMS là một hệ thống phân tích và dự đoán thị trường chứng khoán sử dụng các phương pháp học máy và phân tích dữ liệu. Dự án này tích hợp nhiều kỹ thuật khác nhau để phân tích giá cổ phiếu, bao gồm mô hình dự đoán dựa trên học sâu (LSTM), học máy truyền thống (Random Forest), phân tích tương quan và phân tích tình cảm từ tin tức thị trường.
 
 Hệ thống được thiết kế để hỗ trợ các nhà đầu tư và nhà phân tích tài chính trong việc đưa ra quyết định dựa trên dữ liệu, bằng cách cung cấp các công cụ dự đoán và phân tích đa chiều về thị trường chứng khoán.
 
