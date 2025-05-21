@@ -1,8 +1,8 @@
-# TFMS=
+# TFMS
 
 ## Giới thiệu
 
-TFMS là một hệ thống phân tích và dự đoán thị trường chứng khoán sử dụng các phương pháp học máy và phân tích dữ liệu. Dự án này tích hợp nhiều kỹ thuật khác nhau để phân tích giá cổ phiếu, bao gồm mô hình dự đoán dựa trên học sâu (LSTM), học máy truyền thống (Random Forest), phân tích tương quan và phân tích tình cảm từ tin tức thị trường.
+TFMS là một hệ thống phân tích và dự đoán thị trường chứng khoán sử dụng các phương pháp học máy và phân tích dữ liệu. Dự án này tích hợp nhiều kỹ thuật khác nhau để phân tích giá cổ phiếu, bao gồm mô hình dự đoán dựa trên học sâu (LSTM), học máy truyền thống (Random Forest), phân tích tương quan và phân tích quan điểm từ tin tức thị trường.
 
 Hệ thống được thiết kế để hỗ trợ các nhà đầu tư và nhà phân tích tài chính trong việc đưa ra quyết định dựa trên dữ liệu, bằng cách cung cấp các công cụ dự đoán và phân tích đa chiều về thị trường chứng khoán.
 
@@ -13,7 +13,7 @@ Dự án bao gồm các thành phần chính sau:
 - **Dữ liệu cổ phiếu**: Các file CSV chứa dữ liệu lịch sử giá cổ phiếu của các công ty công nghệ lớn (AAPL, AMZN, GOOG, MSFT, TSLA)
 - **Mô hình dự đoán**: Các notebook Jupyter triển khai các mô hình dự đoán khác nhau
 - **Phân tích tương quan**: Công cụ phân tích mối quan hệ giữa các phương pháp dự đoán và giá thực tế
-- **Phân tích tình cảm**: Hệ thống phân tích tình cảm từ tin tức thị trường liên quan đến các cổ phiếu
+- **Phân tích quan điểm**: Hệ thống phân tích quan điểm từ tin tức thị trường liên quan đến các cổ phiếu
 
 ### Cấu trúc file
 
@@ -26,7 +26,7 @@ TFMS/
 ├── TSLA.csv              # Dữ liệu lịch sử cổ phiếu Tesla
 ├── LSTM_.ipynb           # Mô hình dự đoán sử dụng LSTM
 ├── RFR__.ipynb           # Mô hình dự đoán sử dụng Random Forest
-├── SA_.ipynb             # Phân tích tình cảm từ tin tức
+├── SA_.ipynb             # Phân tích quan điểm từ tin tức
 └── correlation_analysis.ipynb  # Phân tích tương quan giữa các phương pháp
 ```
 
@@ -50,20 +50,20 @@ Mô hình Random Forest Regressor được sử dụng như một phương pháp
 - Huấn luyện mô hình Random Forest với tối ưu hóa siêu tham số
 - So sánh kết quả dự đoán với giá thực tế
 
-### 3. Phân tích tình cảm từ tin tức thị trường
+### 3. Phân tích quan điểm từ tin tức thị trường
 
-Hệ thống phân tích tình cảm (Sentiment Analysis) được triển khai để đánh giá tác động của tin tức đến thị trường:
+Hệ thống phân tích quan điểm (Sentiment Analysis) được triển khai để đánh giá tác động của tin tức đến thị trường:
 
 - Thu thập tin tức liên quan đến các công ty cổ phiếu thông qua NewsAPI
-- Phân tích tình cảm của các tiêu đề tin tức sử dụng TextBlob
+- Phân tích quan điểm của các tiêu đề tin tức sử dụng TextBlob
 - Phân loại tin tức thành tích cực, tiêu cực hoặc trung tính
-- Tính điểm tình cảm tổng hợp để đánh giá xu hướng thị trường
+- Tính điểm quan điểm tổng hợp để đánh giá xu hướng thị trường
 
 ### 4. Phân tích tương quan
 
 Công cụ phân tích tương quan giúp đánh giá hiệu quả của các phương pháp dự đoán:
 
-- So sánh kết quả dự đoán từ LSTM, Random Forest và phân tích tình cảm
+- So sánh kết quả dự đoán từ LSTM, Random Forest và phân tích quan điểm
 - Tính toán hệ số tương quan giữa các phương pháp và giá thực tế
 - Trực quan hóa mối quan hệ thông qua biểu đồ scatter plot
 - Đánh giá phương pháp nào có độ chính xác cao nhất
@@ -99,7 +99,7 @@ jupyter notebook
    - `correlation_analysis.ipynb` - Để hiểu tổng quan về dữ liệu
    - `LSTM_.ipynb` - Để xây dựng và đánh giá mô hình LSTM
    - `RFR__.ipynb` - Để xây dựng và đánh giá mô hình Random Forest
-   - `SA_.ipynb` - Để thực hiện phân tích tình cảm từ tin tức
+   - `SA_.ipynb` - Để thực hiện phân tích quan điểm từ tin tức
 
 ## Phương pháp và kỹ thuật
 
@@ -122,11 +122,11 @@ jupyter notebook
 - Tối ưu hóa siêu tham số thông qua GridSearchCV
 - Đánh giá bằng mean_squared_error và R-squared
 
-### Phân tích tình cảm
+### Phân tích quan điểm
 
 - Sử dụng NewsAPI để thu thập tin tức liên quan đến cổ phiếu
-- Áp dụng TextBlob để phân tích tình cảm của tiêu đề tin tức
-- Phân loại tình cảm dựa trên giá trị polarity
+- Áp dụng TextBlob để phân tích quan điểm của tiêu đề tin tức
+- Phân loại quan điểm dựa trên giá trị polarity
 
 ### Phân tích tương quan
 
